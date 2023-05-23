@@ -19,7 +19,7 @@
 
 Memory recall application, where the user can add texts, photos, and videos of significant events in their life to a timeline, organized by month and year.
 
-This is a full-stack project, consisting of separate repositories for the front-end, back-end and mobile components. Each repository contains the dependencies and scripts needed to develop and build the application.
+This is a full-stack project, consisting of separate folders for the front-end, back-end and mobile components. Each folder contains the dependencies and scripts needed to develop and build the application.
 
 In order to use the application, you'll need to run the server and the web or mobile application.
 
@@ -87,7 +87,25 @@ $ git clone https://github.com/leandrorodrigues00/space-time && cd space-time
 
 ```
 
-**Follow the steps below**
+**Follow the steps below to start the server**
+
+```bash
+# Install the dependencies
+$ cd server
+$ npm i
+
+# Make a copy of '.env.example' to '.env'
+# and set with YOUR environment variables.
+$ cp .env.example .env
+
+
+# Start the app
+$ npm run dev
+
+# Your server will be available at the URL http://localhost:3333
+```
+
+**Follow the steps below to start the web application**
 
 ```bash
 # Install the dependencies
@@ -102,6 +120,24 @@ $ cp .env.example .env
 $ npm run dev
 ```
 
+
+**Follow the steps below to start the mobile application**
+
+```bash
+# Install the dependencies
+$ npm i
+
+# Make a copy of '.env.example' to '.env'
+# and set with YOUR environment variables.
+$ cp .env.example .env
+
+
+# Start the app
+$  npx expo start 
+```
+
+
+**Follow the steps below to start the web application**
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
