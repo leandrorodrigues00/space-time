@@ -26,7 +26,7 @@ In order to use the application, you'll need to run the server and the web or mo
 - For detailed information about all the technologies used in the project, please see: <a href="#-technologies">Technologies</a>.
 - For a detailed guide on how to run the project on your machine, follow the guide at: <a href="#-getting-started">Getting started</a>.
 
-Project developed during [rocketseat's](https://rocketseat.com.br/) #Next-Level-Week-12
+Project developed during [Rocketseat's](https://rocketseat.com.br/) #Next-Level-Week-12
 
 ## 🖥 Project Demonstration
 
