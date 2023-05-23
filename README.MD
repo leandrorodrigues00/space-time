@@ -17,7 +17,7 @@
 
 ## 👩‍💻 About the project
 
-Memory recall application, where the user can add texts, photos, and videos of significant events in their life to a timeline, organized by month and year.
+Time Capsule Application, where the user can add texts, photos, and videos of significant events in their life to a timeline, organized by month and year.
 
 This is a full-stack project, consisting of separate folders for the front-end, back-end and mobile components. Each folder contains the dependencies and scripts needed to develop and build the application.
 
