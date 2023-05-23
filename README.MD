@@ -24,7 +24,7 @@ This is a full-stack project, consisting of separate folders for the front-end, 
 In order to use the application, you'll need to run the server and the web or mobile application.
 
 - For detailed information about all the technologies used in the project, please see: <a href="#-technologies">Technologies</a>.
-- For a detailed guide on how to run the project on your machine, follow the guide at: <a href="#-getting-started">Getting started</a>•
+- For a detailed guide on how to run the project on your machine, follow the guide at: <a href="#-getting-started">Getting started</a>.
 
 Project developed during [rocketseat's](https://rocketseat.com.br/) #Next-Level-Week-12
 
@@ -128,11 +128,6 @@ $ npm run dev
 # Install the dependencies
 $ cd space-time\mobile
 $ npm i
-
-# Make a copy of '.env.example' to '.env'
-# and set with YOUR environment variables.
-$ cp .env.example .env
-
 
 # Start the app
 $  npx expo start 
