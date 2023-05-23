@@ -71,7 +71,7 @@ The application utilizes a range of technologies:
   - [React Native](https://reactnative.dev/) for cross-platform mobile development.
   - Expo modules such as expo-auth-session, expo-constants, expo-image-picker, and expo-secure-store for various functionalities.
   - [NativeWind](https://www.nativewind.dev/) for styling with Tailwind CSS in React Native.
-  - [React Native SVG](https://www.npmjs.com/package/react-native-svg)for SVG support.
+  - [React Native SVG](https://www.npmjs.com/package/react-native-svg) for SVG support.
 
 ## 💻 Getting started
 
@@ -132,8 +132,7 @@ $ npm i
 # Start the app
 $  npx expo start 
 ```
-
-The project uses the github OAuth application. To be able to fill your own environment variables, follow this guide: [OAuth](https://docs.github.com/pt/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app)
+The project uses the github OAuth application for the user to log in. To be able to fill in your own environment variables, follow this guide: [OAuth](https://docs.github.com/pt/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app)
 
 ## 📝 License
 
