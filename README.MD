@@ -109,6 +109,7 @@ $ npm run dev
 
 ```bash
 # Install the dependencies
+$ cd space-time\web
 $ npm i
 
 # Make a copy of '.env.example' to '.env'
@@ -125,6 +126,7 @@ $ npm run dev
 
 ```bash
 # Install the dependencies
+$ cd space-time\mobile
 $ npm i
 
 # Make a copy of '.env.example' to '.env'
@@ -136,8 +138,8 @@ $ cp .env.example .env
 $  npx expo start 
 ```
 
+The project uses the github OAuth application. To be able to fill your own environment variables, follow this guide: [OAuth](https://docs.github.com/pt/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app)
 
-**Follow the steps below to start the web application**
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
