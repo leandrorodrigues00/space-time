@@ -3,7 +3,7 @@ import { api } from '@/lib/api'
 import dayjs from 'dayjs'
 import { ArrowRight } from 'lucide-react'
 import { cookies } from 'next/headers'
-import Image from 'next/image'
+// import Image from 'next/image'
 import Link from 'next/link'
 
 interface Memory {
