@@ -36,6 +36,12 @@ Project developed during [Rocketseat's](https://rocketseat.com.br/) #Next-Level-
 
 ![GIF OF THE PROJECT RUNNING](./docs/space-time2.gif)
 
+
+[click here, see closer](https://space-time-production.up.railway.app/) 😉
+
+<b>Note</b>: The online site with the application is running on [Railway](https://railway.app/), where your free plan has a monthly usage limit !
+
+
 ## 🔖 Layout
 
 You can view the project layout through the links below:
