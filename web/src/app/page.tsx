@@ -52,7 +52,9 @@ export default async function Home() {
                 controls
               />
             ) : (
-              <Image
+              // "url" parameter is valid but upstream response is invalid
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
                 className="aspect-video w-full rounded-lg object-cover"
                 src={memory.coverUrl}
                 width={592}
