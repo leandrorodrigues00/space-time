@@ -10,7 +10,9 @@ export async function GET(req: NextRequest) {
   })
 
   const { token } = registerResponse.data
-  const redirectURL = redirectTo ?? new URL('/', req.url) // if exists redirect, user goes to redirect else root
+  const redirectURL =
+    redirectTo ??
+    new URL('https://space-time-production.up.railway.app/', req.url) // if exists redirect, user goes to redirect else root
   const cookieExpiresInSeconds = 60 * 60 * 24 * 30 // to expires in 30 days
 
   return NextResponse.redirect(redirectURL, {
