@@ -16,6 +16,6 @@ export function middleware(request: NextRequest) {
   return NextResponse.redirect(new URL('/'))
 }
 
-export const config = {
-  matcher: '/memories/:path*',
-}
+// export const config = {
+//   matcher: '/memories/:path*',
+// }
