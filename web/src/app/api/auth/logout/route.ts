@@ -1,7 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server'
 
 export async function GET(request: NextRequest) {
-  const redirectURL = new URL('/', request.url)
+  const redirectURL = new URL(
+    process.env.RAILWAY_STATIC_URL || '/',
+    request.url,
+  )
 
   return NextResponse.redirect(redirectURL, {
     headers: {

@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { NextRequest, NextResponse } from 'next/server'
 
 const signInURL = `https://github.com/login/oauth/authorize?client_id=${process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID}`
@@ -6,18 +5,17 @@ const signInURL = `https://github.com/login/oauth/authorize?client_id=${process.
 export function middleware(request: NextRequest) {
   const token = request.cookies.get('token')?.value
 
-  // temporary fix for deployment
-  // if (!token) {
-  //   return NextResponse.redirect(signInURL, {
-  //     headers: {
-  //       'Set-Cookie': `redirectTo=${request.url}; Path=/; HttpOnly; max-age=20;`,
-  //     },
-  //   })
-  // }
+  if (!token) {
+    return NextResponse.redirect(signInURL, {
+      headers: {
+        'Set-Cookie': `redirectTo=${request.url}; Path=${process.env.RAILWAY_STATIC_URL}; HttpOnly; max-age=20;`,
+      },
+    })
+  }
 
-  // return NextResponse.next()
+  return NextResponse.redirect(process.env.RAILWAY_STATIC_URL || '/')
 }
 
-// export const config = {
-//   matcher: '/memories/:path*',
-// }
+export const config = {
+  matcher: `/memories/:path*`,
+}

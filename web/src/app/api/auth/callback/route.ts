@@ -13,7 +13,8 @@ export async function GET(request: NextRequest) {
 
   const { token } = registerResponse.data
 
-  const redirectURL = redirectTo ?? new URL('/', request.url)
+  const redirectURL =
+    redirectTo ?? new URL(process.env.RAILWAY_STATIC_URL || '/', request.url)
 
   const cookieExpiresInSeconds = 60 * 60 * 24 * 30
 
