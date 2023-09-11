@@ -37,11 +37,6 @@ Project developed during [Rocketseat's](https://rocketseat.com.br/) #Next-Level-
 ![GIF OF THE PROJECT RUNNING](./docs/space-time2.gif)
 
 
-[click here, see closer](https://space-time-production.up.railway.app/) 😉
-
-<b>Note</b>: The online site with the application is running on [Railway](https://railway.app/), where your free plan has a monthly usage limit !
-
-
 ## 🔖 Layout
 
 You can view the project layout through the links below:
@@ -85,6 +80,7 @@ The application utilizes a range of technologies:
 
 - [Node.js](https://nodejs.org/en/)
 - [Yarn](https://classic.yarnpkg.com/) or [NPM](https://www.npmjs.com/) _(examples are with NPM)_
+- The project uses the github OAuth application for the user to log in. To be able to fill in your own environment variables, follow this guide: [OAuth](https://docs.github.com/pt/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app)
 
 **Clone the project and access the folder**
 
@@ -138,7 +134,7 @@ $ npm i
 # Start the app
 $  npx expo start 
 ```
-The project uses the github OAuth application for the user to log in. To be able to fill in your own environment variables, follow this guide: [OAuth](https://docs.github.com/pt/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app)
+
 
 ## 📝 License
 

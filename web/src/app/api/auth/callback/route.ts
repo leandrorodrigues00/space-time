@@ -11,18 +11,13 @@ export async function GET(req: NextRequest) {
   })
 
   const { token } = registerResponse.data
-  // const redirectURL =
-  //   redirectTo ??
-  //   new URL('https://space-time-production.up.railway.app/', req.url) // if exists redirect, user goes to redirect else root
+  const redirectURL = redirectTo ?? new URL('http://localhost:3000/', req.url) // if exists redirect, user goes to redirect else root
 
   const cookieExpiresInSeconds = 60 * 60 * 24 * 30 // to expires in 30 days
 
-  return NextResponse.redirect(
-    'https://space-time-production.up.railway.app/',
-    {
-      headers: {
-        'Set-Cookie': `token=${token}; Path=/; max-age=${cookieExpiresInSeconds};`,
-      },
+  return NextResponse.redirect(redirectURL, {
+    headers: {
+      'Set-Cookie': `token=${token}; Path=/; max-age=${cookieExpiresInSeconds};`,
     },
-  )
+  })
 }
